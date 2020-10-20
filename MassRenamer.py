@@ -14,7 +14,7 @@ currentFiles = os.listdir(r'YOURPATH')
 
 for fileName in currentFiles:
     currentPath = f'YOURPATH\\{fileName}'
-    newFileName = fileName.replace('02','0-2').replace('37','3-7').replace('','') # Use this variable to modify the existing name or to define a new one.
+    newFileName = fileName.replace('1',',1').replace('2',',2').replace('3',',3') # Use this variable to modify the existing name or to define a new one.
     newPath = f'YOURPATH\\{newFileName}'
     os.rename(currentPath,newPath)
 
